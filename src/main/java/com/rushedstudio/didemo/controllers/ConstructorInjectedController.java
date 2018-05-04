@@ -1,9 +1,13 @@
 package com.rushedstudio.didemo.controllers;
 
 import com.rushedstudio.didemo.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
 
+    @Autowired
     private GreetingService greetingService;
 
     public ConstructorInjectedController(GreetingService greetingService){
